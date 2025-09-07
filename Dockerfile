@@ -1,5 +1,7 @@
 FROM golang:1.24-alpine as builder
 
+LABEL MAZE_LABEL=mzeevi-test
+
 COPY . /usr/src/ib-sriov-cni
 
 ENV HTTP_PROXY $http_proxy
